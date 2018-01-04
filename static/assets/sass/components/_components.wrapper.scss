@@ -1,0 +1,65 @@
+.wrapper {
+  background: $white;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.wrapper-form {
+  margin: 2.5rem 0;
+  list-style: none;
+  background: $grey-light_2;
+  padding: 25px 30px;
+  @include transition(all, .3s);
+  >.title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: normal;
+    color: $grey-dark;
+  }
+  .label {
+    font-size: 15px;
+    color: $grey;
+    vertical-align: middle;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+      padding: 0 15px 0 0;
+    }
+  }
+  .btn-blue {
+    @media only screen and (min-width: 388px) {
+      margin-left: 10px;
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.wrapper-result {
+  padding: 25px 30px;
+  background: $white;
+  border: 1px solid $grey-light_2;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, .12), 0 2px 3px -1px rgba(0, 0, 0, .12);
+  display: inline-block;
+  width: 100%;
+  >.title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: normal;
+    color: $grey-dark;
+  }
+  >.street,
+  .city,
+  .zip {
+    color: $grey-dark;
+  }
+  >.map {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <base href="/">
+  <title>Luiza Labs - Busca CEP</title>
+  <meta charset="utf-8">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1">
+  <meta name="organization name" content="4Party" />
+  <meta name="title" content="Luiza Labs - Busca CEP">
+  <meta name="organization name" content="Luiza Labs">
+  <meta name="language" content="pt-br">
+  <meta name="location" content="Sao Paulo, Brazil">
+  <meta name="revisit" content="14 days">
+  <meta name="author" content="Luiza Labs">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+  <!--[if lt IE 8]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG8Kqngw0ffWHhAt2-8DVYDid4hZnZTvE"></script>
+  <link rel="stylesheet" type="text/css" href="/dist/style.min.css">
+
+</head>
+
+<body ng-app="app">
+
+  <div ui-view=""></div>
+  <toaster-container></toaster-container>
+
+  <script src="/dist/vendors.min.js"></script>
+  <script src="/app/app.js"></script>
+  <script src="/app/routes.js"></script>
+  <script src="/app/config/appConfig.js"></script>
+  <script src="/app/controllers/homeController.js"></script>
+</body>
+
+</html>

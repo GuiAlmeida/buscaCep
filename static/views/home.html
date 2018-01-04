@@ -1,0 +1,41 @@
+<section class="wrapper">
+
+  <main role="main">
+    <section class="section-page">
+      <div class="col-md-8 _center-block">
+        <h1 class="title">Desafio Luiza Labs</h1>
+
+        <div class="wrapper-form">
+          <h2 class="title">Buscar</h2>
+          <form class="form-inline" name="form" ng-submit="buscarCEP()">
+            <div class="form-group" ng-class="{'has-success': form.cep.$valid, 'has-error': !form.cep.$pristine && !form.cep.$valid}">
+              <label class="label" for="cep">CEP</label>
+              <input class="form-control" id="text" type="cep" name="cep" ng-model="cep" placeholder="CEP" autocomplete="on" autocorrect="off" autocapitalize="off" spellcheck="false" mask="99999-999" mask-clean="false" mask-validate="true" ng-minlength="9" ng-maxlength="9" required>
+              <div class=" form-control-feedback">
+                <i class="fa fa-check" ng-show="form.cep.$valid"></i>
+                <i class="fa fa-exclamation-circle" ng-show="!form.cep.$pristine && !form.cep.$valid"></i>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-blue" ng-disabled="form.$invalid">Buscar</button>
+          </form>
+        </div>
+
+        <div class="wrapper-result" ng-show="dadosCEP">
+          <h3 class="title">{{dadosCEP.logradouro}}</h3>
+          <p class="street">{{dadosCEP.bairro}}</p>
+          <p class="city">{{dadosCEP.localidade}} - {{dadosCEP.uf}}</p>
+          <p class="zip">{{dadosCEP.cep}}</p>
+          <div class="map">
+            <!-- <ng-map center="{{dadosCEP.cep}}"></ng-map> -->
+            <!-- <ng-map center="[40.74, -74.18]"></ng-map> -->
+            <ng-map zoom="17" center="{{dadosCEP.cep}}" map-initialized="mycallback(map)">
+              <marker position="{{dadosCEP.cep}}" title="{{dadosCEP.cep}}"></marker>
+            </ng-map>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</section>

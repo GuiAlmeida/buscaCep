@@ -1,0 +1,48 @@
+.form-control-feedback {
+  width: 40px;
+  height: 37px;
+  line-height: 37px;
+  top: 0;
+  font-size: 15px;
+  @media only screen and (max-width: 768px) {
+    top: 35px;
+  }
+}
+
+.has-error,
+.has-success {
+  .input-group-addon {
+    background-color: transparent;
+  }
+  .form-control,
+  .form-control:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.has-error {
+  .form-control {
+    color: $red;
+    border: 1px solid $red;
+  }
+  .error {
+    color: $red;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .drop-box {
+    border-color: $red;
+  }
+}
+
+.has-success {
+  .form-control {
+    color: $green;
+    border: 1px solid $green;
+  }
+}

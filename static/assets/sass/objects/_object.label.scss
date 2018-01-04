@@ -1,0 +1,24 @@
+.label {
+  display: inline-block;
+  padding: 6px 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  &.-absolute {
+    position: absolute;
+    bottom: 1px;
+    right: -3px;
+    padding: 0;
+  }
+  &.-circle {
+    @include border-radius(50%);
+    box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, .2);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}

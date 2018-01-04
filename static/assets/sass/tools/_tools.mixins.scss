@@ -1,0 +1,77 @@
+﻿@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate_2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin border-radius($radius: $base-radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($prop: all, $time: 1s, $ease: linear) {
+  -moz-transition: $prop $time $ease;
+  -o-transition: $prop $time $ease;
+  -webkit-transition: $prop $time $ease;
+  transition: $prop $time $ease;
+}
+
+@mixin ellipsis() {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+}
+
+@mixin transform($transform) {
+  transform: $transform;
+}
+
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ( $horizontal = true ) and ( $vertical = true ) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ( $horizontal = true ) and ( $vertical = false ) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ( $horizontal = false ) and ( $vertical = true ) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@keyframes circle-loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
