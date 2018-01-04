@@ -1,6 +1,8 @@
-#Institucional 4Party
+#Busca CEP
 
-Para executar você precisa seguir os seguintes passos
+Projeto para buscar CEP, desenvolvido com, AngularJS, GULP e SASS.
+
+Para executar você precisa seguir os seguintes passos:
 
 1. Tenha o NodeJS  instalado em sua máquina
 
