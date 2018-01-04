@@ -1,6 +1,6 @@
 #Busca CEP
 
-Projeto para buscar CEP, desenvolvido com, AngularJS, GULP e SASS.
+Projeto para buscar CEP, desenvolvido com: AngularJS, GULP e SASS.
 
 Para executar você precisa seguir os seguintes passos:
 
