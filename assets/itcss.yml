@@ -1,0 +1,9 @@
+# ========================================
+#   #itcss.yml
+#   This file is automatically updated by itcsscli.
+# ========================================
+---
+stylesheets_directory: sass
+stylesheets_import_file: main
+extension: sass
+
