@@ -10,3 +10,5 @@ frontend4party\.iml
 static/assets/itcss\.yml
 
 package-lock.json
+
+.htaccess
