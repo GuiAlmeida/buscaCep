@@ -1,9 +1,9 @@
 {
   "name": "buscaCep",
-  "private": true,
+  "public": true,
   "version": "0.0.0",
   "description": "",
-  "repository": "https://gitlab.com/4party/home4party",
+  "repository": "https://github.com/GuiAlmeida/buscaCep",
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.9.0",
