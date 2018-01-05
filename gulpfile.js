@@ -15,13 +15,11 @@ gulp.task('vendors', function () {
         'static/vendors/jquery-3.1.1.min.js',
         'static/vendors/bootstrap.min.js',
         'static/vendors/angular.min.js',
+        'static/vendors/ng-map.min.js',
         'static/vendors/angular-locale_pt-br.min.js',
         'static/vendors/angular-ui-router.min.js',
-        'static/vendors/angular-local-storage.min.js',
-        'static/vendors/angular-cookies.min.js',
         'static/vendors/toaster.min.js',
         'static/vendors/ngmask.min.js',
-        'static/vendors/ng-map.min.js'
     ])
         .pipe(concat('vendors.min.js'))
         .pipe(angularNgAnnotate())

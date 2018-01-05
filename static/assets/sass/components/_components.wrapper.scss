@@ -2,10 +2,11 @@
   background: $white;
   min-height: 100vh;
   height: 100%;
+  padding: 40px 0;
 }
 
 .wrapper-form {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 1.5rem;
   list-style: none;
   background: $grey-light_2;
   padding: 25px 30px;
@@ -47,6 +48,7 @@
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, .12), 0 2px 3px -1px rgba(0, 0, 0, .12);
   display: inline-block;
   width: 100%;
+  position: relative;
   >.title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -61,5 +63,11 @@
   }
   >.map {
     margin-top: 20px;
+  }
+  >.btn-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
   }
 }

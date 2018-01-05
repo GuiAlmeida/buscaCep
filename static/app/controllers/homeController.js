@@ -1,10 +1,6 @@
 app.controller('homeController', ['$scope', '$http', 'toaster',
   function ($scope, $http, toaster) {
 
-    $scope.mycallback = function(map) {
-      $scope.mymap = map;
-      $scope.$apply();
-    };
 
     $scope.buscarCEP = function () {
       var cep = $scope.cep;
@@ -20,7 +16,15 @@ app.controller('homeController', ['$scope', '$http', 'toaster',
       }, function (rr) {
         toaster.pop("error", "Oops", "Algo deu errado! Por favor, confira os dados e tente novamente.");
       });
-    }
+    };
+
+    
+    $scope.closeMap = function () {
+      $scope.dadosCEP = false;
+      $scope.cep = null;
+      $scope.form.cep.$pristine = true;
+      document.querySelector("#cep").focus();
+    };
 
   }
 
